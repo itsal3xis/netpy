@@ -1,2 +1,4 @@
 argparse
 pyshark
+requests
+socket
