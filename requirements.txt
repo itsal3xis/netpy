@@ -2,3 +2,4 @@ argparse
 pyshark
 requests
 socket
+rich
