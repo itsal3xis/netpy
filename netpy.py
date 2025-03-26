@@ -75,8 +75,8 @@ def view_packet_details(packet_id):
         with open(captured_packets_file, "r") as f:
             captured_packets = json.load(f)
         
-        if packet_id in captured_packets:
-            packet_info = captured_packets[packet_id]
+        if str(packet_id) in captured_packets:
+            packet_info = captured_packets[str(packet_id)]
             console = Console()
             console.print(f"[bold yellow]Details for Packet ID {packet_id}[/bold yellow]")
             console.print(f"Time: {packet_info[0]}")
