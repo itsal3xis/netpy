@@ -112,3 +112,6 @@ if __name__ == "__main__":
 
     if args.command == "capture":
         capture_traffic(args.interface, args.filter, args.count)
+    
+    if args.command == "view":
+        view_packet_details(args.packet_id)
